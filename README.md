@@ -4,9 +4,11 @@
 # Instructor: Himani Tawade
 
 Team members:
-Christian Mendez
+
+Christian Mendez 
 christianmendez@csu.fullerton.edu
-Michelle Nguyen
+
+Michelle Nguyen 
 michellenguyen12@csu.fullerton.edu
 
 
