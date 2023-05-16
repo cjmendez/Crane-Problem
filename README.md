@@ -3,6 +3,12 @@
 # Spring 2023
 # Instructor: Himani Tawade
 
+#Team members
+#Christian Mendez
+christianmendez@csu.fullerton.edu
+#Michelle Nguyen
+michellenguyen12@csu.fullerton.edu
+
 **Clone This repository into your repository and implement the code, along with a document with required details mentioned at the last, a demo video, readme file and .gitignore file. Submission will be a git repo link with all the requirements updated to repo on canvas.**
 
 # Abstract
@@ -16,9 +22,9 @@ Polynomial-time dynamic programming algorithms are more efficient than exponenti
 
 # The Problem
 
-Both algorithms will be used to solve another interesting problem related to containers and loading them into ships. Suppose that you have arrived at the seaport and need to navigate among buildings to reach various cranes that will take your containers and load them into various ships. 
+Both algorithms will be used to solve another interesting problem related to containers and loading them into ships. Suppose that you have arrived at the seaport and need to navigate among buildings to reach various cranes that will take your containers and load them into various ships.
 
-Each truck is allowed to follow only one route and it can drive only south or east, but cannot drive north nor west. We will represent the seaport drivable area as a 2D grid. A truck starts at row 0 and column 0, i.e. coordinate (0, 0), at the top-left corner. Each c cell represents a crane, each X represents a building, and each . cell represents a passable space. A truck’s goal is to plan a route for driving that maximizes the number of cranes that can be reached, while avoiding buildings. 
+Each truck is allowed to follow only one route and it can drive only south or east, but cannot drive north nor west. We will represent the seaport drivable area as a 2D grid. A truck starts at row 0 and column 0, i.e. coordinate (0, 0), at the top-left corner. Each c cell represents a crane, each X represents a building, and each . cell represents a passable space. A truck’s goal is to plan a route for driving that maximizes the number of cranes that can be reached, while avoiding buildings.
 
 In this diagram, the + cells represent passable space that the truck drove through, and the capital C cells represent cranes that the truck reached and had cargo unloaded. A . still represents passable space that was never visited, and lower-case c still represents cranes that were neither reached nor used. Observe that the path starts at (0, 0), and moves east and south, but not in any other direction. Also note that there is no valid path in this grid that would reach more than 7 cranes.
 
@@ -76,7 +82,7 @@ The time complexity of this algorithm is dominated by the general-case loops. Th
 
 # To Do:
 
-# I. Create a Document with the following 
+# I. Create a Document with the following
 - Exhastive Algorithm Soltuion Psuedocode and time analysis
 - Plot a graph for time vs input size for the algorthm
 - Dynamic Algorithm Soltuion Psuedocode and time analysis
@@ -96,6 +102,3 @@ Questions
 # II. Create video demo for a running implementation format is same as Project 1
 
 # III. Complete the todo sections in the cranes_algs.hpp, update the readme file with team member names and email ID.
-
-
-
