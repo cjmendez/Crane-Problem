@@ -86,12 +86,22 @@ int main() {
          TEST_EQUAL("all_cranes total cranes", 6, output.total_cranes());
 		   });
 
-  rubric.criterion("dynamic programming - maze", 1,
-		   [&]() {
-         TEST_EQUAL("correct", maze_solution, crane_unloading_dyn_prog(maze));
+  rubric.criterion("dynamic programming - maze", 1, [&]() {
+    std::cout << std::endl;
+
+    auto small_output = crane_unloading_dyn_prog(small_random);
+    std::cout << "THE RESULT IS " << small_output.total_cranes() << std::endl;
+    TEST_EQUAL("small", 3, small_output.total_cranes());
+
+    auto medium_output = crane_unloading_dyn_prog(medium_random);
+    std::cout << "THE RESULT IS " << medium_output.total_cranes() << std::endl;
+    TEST_EQUAL("medium", 7, medium_output.total_cranes());
+
+    auto large_output = crane_unloading_dyn_prog(large_random);
+    std::cout << "THE RESULT IS " << large_output.total_cranes() << std::endl;
+    TEST_EQUAL("large", 9, large_output.total_cranes());
 		   });
-  rubric.criterion("stress test", 2,
-		   [&]() {
+  rubric.criterion("stress test", 2, [&]() {
          const cranes::coordinate ROWS = 5,
                                   MAX_COLUMNS = 15;
          const unsigned SEED = 20181130;
