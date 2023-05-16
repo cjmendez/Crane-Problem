@@ -5,10 +5,10 @@
 
 Team members:
 
-Christian Mendez\n
+Christian Mendez 
 christianmendez@csu.fullerton.edu
 
-Michelle Nguyen/n
+Michelle Nguyen 
 michellenguyen12@csu.fullerton.edu
 
 
